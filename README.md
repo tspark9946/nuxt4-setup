@@ -9,15 +9,6 @@ Make sure to install dependencies:
 ```bash
 # npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -27,15 +18,6 @@ Start the development server on `http://localhost:3000`:
 ```bash
 # npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -45,15 +27,6 @@ Build the application for production:
 ```bash
 # npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
@@ -61,15 +34,27 @@ Locally preview production build:
 ```bash
 # npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Package List
+
+```bash
+# nuxt4
+npm create nuxt@latest .
+
+# eslint
+npx nuxi module add eslint
+npm i -D @antfu/eslint-config
+npm i -D eslint-plugin-format
+
+# husky
+npm install husky --save-dev
+npx huskt init
+npm i -D lint-staged
+
+# tailwind, daisyUI, Nuxt Icon
+npm install tailwindcss @tailwindcss/vite
+npm i -D daisyui@latest
+npx nuxi module add icon
+npx nuxi module add color-mode
+```
