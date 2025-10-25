@@ -19,6 +19,7 @@ export default withNuxt(
     },
     {
       rules: {
+        'vue/no-multiple-template-root': 'off',
         'ts/no-redeclare': 'off',
         'ts/consistent-type-definitions': ['error', 'type'],
         'no-console': ['warn'],
